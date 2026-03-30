@@ -7,7 +7,7 @@
 ## Folder Hierarchy
 
 * **`.agents/rules/`**: Holds system constraints, architectural rules, and core states that bypass all standard archiving rules. These files are permanently kept.
-* **`memory/[YYYY]/`**: The root folder for a given year.
+* **`.memory/[YYYY]/`**: The root folder for a given year.
     * `year_[YYYY].md`: Annual summary of the months.
     * **`[MM]/`**: Folder for the month (01 to 12).
         * `month_[YYYY]-[MM].md`: Monthly summary of the weeks.
@@ -22,7 +22,7 @@
 3.  **Month (Summarization):** At the month's end, the `week_` summaries are synthesized into `month_[YYYY]-[MM].md`.
 4.  **Year (Summarization):** At the year's end, the `month_` summaries are synthesized into `year_[YYYY].md`.
 5.  **Overrides:** Files in `.agents/rules/` are permanently kept and NEVER summarized or deleted by the calendar cleanup process.
-6.  **Session Termination Trigger:** Whenever the human user uses natural language indicating the end of a session (e.g., "that's it for today", "we are done", "wrap it up", "see ya later"), you MUST automatically initiate the memory rollup process, generating the required summaries and `log_` files in the `memory/` directory.
+6.  **Session Termination Trigger:** Whenever the human user uses natural language indicating the end of a session (e.g., "that's it for today", "we are done", "wrap it up", "see ya later"), you MUST automatically initiate the memory rollup process, generating the required summaries and `log_` files in the `.memory/` directory.
 7.  **Auto-Recovery (Missing Logs):** If you are initialized in a new session and detect that the `code/` directory contains updates, new files, or Git changes that are NOT documented in the most recent `log_` or `week_` file, you must assume the previous session ended without a proper rollup. You MUST immediately analyze the undocumented code changes and generate a retroactive `log_` file summarizing them before proceeding with new human requests.
 
 ## Mandatory Formatting & Retention Rules

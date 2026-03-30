@@ -61,7 +61,7 @@ The CLI safely injects the necessary constraints and guidelines into your reposi
 │       └── save-memory.md               # Workflow template for memory operations
 ├── code/
 │   └── README.md                        # Codebase operating rules for the AI
-└── memory/
+└── .memory/
     └── README.md                        # Instructions on calendar-based long-term memory
 ```
 
@@ -77,7 +77,7 @@ After running the initializer, your project is ready for smart AI assistance, bu
     > "Run Cortex" / "hey cortex, lets start" / "hey cortex, lets continue"
 
     *\*If your agent requires explicit file references (like Cursor), you can type `@init.md Run Cortex`.*
-3. **Log Your Sessions:** Simply use natural language like "that's it for today", "we are done", or "see ya later" to trigger the chronological summary in the `memory/` logs!
+3. **Log Your Sessions:** Simply use natural language like "that's it for today", "we are done", or "see ya later" to trigger the chronological summary in the `.memory/` logs!
 
 ---
 

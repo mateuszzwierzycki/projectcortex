@@ -31,6 +31,7 @@ program
       const dirs = [
         path.join(targetDir, '.agents', 'rules'),
         path.join(targetDir, '.agents', 'workflows'),
+        path.join(targetDir, '.memory'),
         path.join(targetDir, 'code'),
       ];
 
@@ -60,8 +61,8 @@ program
           dest: path.join(targetDir, '.agents', 'workflows', 'init.md')
         },
         {
-          src: path.join(templatesDir, 'memory', 'README.md'),
-          dest: path.join(targetDir, 'memory', 'README.md')
+          src: path.join(templatesDir, '.memory', 'README.md'),
+          dest: path.join(targetDir, '.memory', 'README.md')
         },
         {
           src: path.join(templatesDir, 'code', 'README.md'),

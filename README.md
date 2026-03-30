@@ -9,10 +9,10 @@ It solves the biggest problem of AI coding tools: **context loss over time**. By
 ## 📂 Project Structure
 
 * **`code/`**: The standard workspace where human and AI write the actual application code.
-* **`memory/`**: Auto-managed storage where the AI synthesizes and archives conversation logs to maintain context over months or years.
+* **`.memory/`**: Auto-managed storage where the AI synthesizes and archives conversation logs to maintain context over months or years.
 * **`.agents/rules/`**: The core rules (tech stack, boundaries) that the AI must never break.
 
-> **Note for Humans:** The `README.md` files located inside `code/` and `memory/` are **system instructions written exclusively for the AI**. You do not need to read or edit them unless you want to modify how the AI inherently behaves.
+> **Note for Humans:** The `README.md` files located inside `code/` and `.memory/` are **system instructions written exclusively for the AI**. You do not need to read or edit them unless you want to modify how the AI inherently behaves.
 
 ---
 
@@ -36,7 +36,7 @@ When you finish your current coding session, you don't need any complex commands
 
 > *"That's it for today"* / *"We are done"* / *"Wrap it up"* / *"See ya later"*
 
-The AI is instructed to naturally recognize any general session-ending phrases. It will automatically summarize the work, list unresolved issues, and generate the proper log files in the `memory/` directory before you close the window.
+The AI is instructed to naturally recognize any general session-ending phrases. It will automatically summarize the work, list unresolved issues, and generate the proper log files in the `.memory/` directory before you close the window.
 
 ---
 
