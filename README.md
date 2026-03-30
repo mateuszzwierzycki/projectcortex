@@ -1,5 +1,7 @@
 # 🧠 Project Cortex
 
+![Project Cortex](assets/hero.png)
+
 **Project Cortex** is a structured repository template designed specifically for long-term, AI-assisted development (working with agents like Cursor, Copilot Workspace, Claude, or Gemini). 
 
 It solves the biggest problem of AI coding tools: **context loss over time**. By enforcing a strict dual-folder workspace and a self-summarizing calendar memory, it prevents AI agents from forgetting architectural decisions or generating disorganized file structures after weeks of development.

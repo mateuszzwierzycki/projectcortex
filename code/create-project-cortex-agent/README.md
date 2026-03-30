@@ -1,5 +1,7 @@
 # create-project-cortex-agent
 
+![Project Cortex](assets/hero.png)
+
 A command-line tool to instantly initialize your workspace with the **Project Cortex** AI Agent directory structure.
 
 This package bootstraps the foundational architecture needed for long-term AI-assisted development by preventing context degradation. It sets up strict boundaries, rules, and calendar-based memory logs for AI coding agents (such as Claude, Gemini, ChatGPT, or IDEs like Cursor and Copilot).

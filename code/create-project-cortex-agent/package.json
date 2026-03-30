@@ -1,6 +1,6 @@
 {
   "name": "create-project-cortex-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to initialize the Project Cortex agent directory structure and rules",
   "main": "dist/cli.js",
   "bin": {
