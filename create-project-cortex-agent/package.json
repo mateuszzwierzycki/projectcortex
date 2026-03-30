@@ -1,0 +1,35 @@
+{
+  "name": "create-project-cortex-agent",
+  "version": "1.0.0",
+  "description": "CLI tool to initialize the Project Cortex agent directory structure and rules",
+  "main": "dist/cli.js",
+  "bin": {
+    "create-project-cortex-agent": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "project-cortex",
+    "agent",
+    "init"
+  ],
+  "author": "Project Cortex",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  }
+}
