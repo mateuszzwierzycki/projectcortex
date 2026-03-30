@@ -11,6 +11,10 @@
     "start": "node dist/cli.js",
     "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "templates"
+  ],
   "keywords": [
     "cli",
     "project-cortex",
