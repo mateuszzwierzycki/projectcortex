@@ -1,8 +1,8 @@
-# Memory Context
+# .memory Context
 
 > **Important: [AI-ONLY SYSTEM INSTRUCTION]**
-> This file establishes the operational requirements for AI agents managing the project's memory. Humans do not need to read or edit this file unless fundamentally changing the rules of the template.
-> This folder stores conversation logs organized into a nested calendar structure, acting as the long-term memory for the AI.
+> This file establishes the operational requirements for AI agents managing the project's .memory. Humans do not need to read or edit this file unless fundamentally changing the rules of the template.
+> This folder stores conversation logs organized into a nested calendar structure, acting as the long-term .memory for the AI.
 
 ## Folder Hierarchy
 
@@ -22,7 +22,7 @@
 3.  **Month (Summarization):** At the month's end, the `week_` summaries are synthesized into `month_[YYYY]-[MM].md`.
 4.  **Year (Summarization):** At the year's end, the `month_` summaries are synthesized into `year_[YYYY].md`.
 5.  **Overrides:** Files in `.agents/rules/` are permanently kept and NEVER summarized or deleted by the calendar cleanup process.
-6.  **Session Termination Trigger:** Whenever the human user uses natural language indicating the end of a session (e.g., "that's it for today", "we are done", "wrap it up", "see ya later"), you MUST automatically initiate the memory rollup process, generating the required summaries and `log_` files in the `.memory/` directory.
+6.  **Session Termination Trigger:** Whenever the human user uses natural language indicating the end of a session (e.g., "that's it for today", "we are done", "wrap it up", "see ya later"), you MUST automatically initiate the .memory rollup process, generating the required summaries and `log_` files in the `.memory/` directory.
 7.  **Auto-Recovery (Missing Logs):** If you are initialized in a new session and detect that the `code/` directory contains updates, new files, or Git changes that are NOT documented in the most recent `log_` or `week_` file, you must assume the previous session ended without a proper rollup. You MUST immediately analyze the undocumented code changes and generate a retroactive `log_` file summarizing them before proceeding with new human requests.
 
 ## Mandatory Formatting & Retention Rules

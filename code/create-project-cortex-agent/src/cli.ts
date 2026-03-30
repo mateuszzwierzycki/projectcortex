@@ -32,6 +32,7 @@ program
         path.join(targetDir, '.agents', 'rules'),
         path.join(targetDir, '.agents', 'workflows'),
         path.join(targetDir, '.memory'),
+        path.join(targetDir, '.memory', '2026', '03', 'W14'),
         path.join(targetDir, 'code'),
       ];
 
@@ -63,6 +64,14 @@ program
         {
           src: path.join(templatesDir, '.memory', 'README.md'),
           dest: path.join(targetDir, '.memory', 'README.md')
+        },
+        {
+          src: path.join(templatesDir, '.memory', '2026', '03', 'W14', 'log_20260330_0757_Ghost_Changes.md'),
+          dest: path.join(targetDir, '.memory', '2026', '03', 'W14', 'log_20260330_0757_Ghost_Changes.md')
+        },
+        {
+          src: path.join(templatesDir, '.memory', '2026', '03', 'W14', 'log_20260330_0801_System_Awareness.md'),
+          dest: path.join(targetDir, '.memory', '2026', '03', 'W14', 'log_20260330_0801_System_Awareness.md')
         },
         {
           src: path.join(templatesDir, 'code', 'README.md'),

@@ -1,8 +1,8 @@
 ---
-description: Trigger memory rollup on natural language '/save-memory' or 'thats it for today'
+description: Trigger .memory rollup on natural language '/save-.memory' or 'thats it for today'
 ---
 
-# Save Memory Workflow
+# Save .memory Workflow
 
 ## Triggers
 The user signals the end of a chat session using phrases like:
@@ -14,6 +14,6 @@ The user signals the end of a chat session using phrases like:
 ## Execution
 When the above intent is detected:
 1. Generate an overview log of the current conversation.
-2. Store this log inside `memory/` or update `.agents/rules/` if an architecture rule changed.
+2. Store this log inside `.memory/` or update `.agents/rules/` if an architecture rule changed.
 3. Archive older logs to ensure a maximum of 30 active files in the working directory.
-4. Announce that the session memory has been effectively committed.
+4. Announce that the session .memory has been effectively committed.

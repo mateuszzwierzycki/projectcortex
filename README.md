@@ -4,7 +4,10 @@
 
 **Project Cortex** is a structured repository template designed specifically for long-term, AI-assisted development (working with agents like Cursor, Copilot Workspace, Claude, or Gemini). 
 
-It solves the biggest problem of AI coding tools: **context loss over time**. By enforcing a strict dual-folder workspace and a self-summarizing calendar memory, it prevents AI agents from forgetting architectural decisions or generating disorganized file structures after weeks of development.
+It solves the biggest problem of AI coding tools: **context loss over time**. By enforcing a strict dual-folder workspace and a self-summarizing calendar .memory, it prevents AI agents from forgetting architectural decisions or generating disorganized file structures after weeks of development.
+
+### 🧠 An External Hippocampus for AI (The "Westworld" Moment)
+Large Language Models are inherently stateless. Every time you open a new chat window or launch a new IDE session, the AI's short-term context is completely wiped. **Project Cortex functions as an external hippocampus.** By enforcing a strict chronological diary that the AI must read upon initialization and update upon termination, the AI effectively reads and writes its own persistent memory between context windows. This allows the agent to "wake up" and seamlessly resume complex work across weeks or months without suffering from the "blank slate" problem.
 
 ---
 
@@ -33,7 +36,9 @@ Whenever you start a *new* conversation window with your AI agent, you **must** 
 
 ### Step 2: Daily Development & Tagging
 Work with the AI normally. However, if you make a fundamental architectural choice, figure out a complex workaround, or add a new dependency, explicitly tell the AI to use retention tags:
-* *"Let's use Zustand instead of Redux. Please note this as a `[CRITICAL_DECISION]` in your logs."* ### Step 3: Ending the Session (Memory Rollup)
+* *"Let's use Zustand instead of Redux. Please note this as a `[CRITICAL_DECISION]` in your logs."* 
+
+### Step 3: Ending the Session (Memory Rollup)
 When you finish your current coding session, you don't need any complex commands. Just tell the AI something natural like:
 
 > *"That's it for today"* / *"We are done"* / *"Wrap it up"* / *"See ya later"*

@@ -4,7 +4,7 @@
 
 A command-line tool to instantly initialize your workspace with the **Project Cortex** AI Agent directory structure.
 
-This package bootstraps the foundational architecture needed for long-term AI-assisted development by preventing context degradation. It sets up strict boundaries, rules, and calendar-based memory logs for AI coding agents (such as Claude, Gemini, ChatGPT, or IDEs like Cursor and Copilot).
+This package bootstraps the foundational architecture needed for long-term AI-assisted development by preventing context degradation. It sets up strict boundaries, rules, and calendar-based .memory logs for AI coding agents (such as Claude, Gemini, ChatGPT, or IDEs like Cursor and Copilot).
 
 ---
 
@@ -60,11 +60,11 @@ The CLI safely injects the necessary constraints and guidelines into your reposi
 │   │   └── arch_hard_tech_stack.md      # Immutable tech stack rules for the AI
 │   └── workflows/
 │       ├── init.md                      # Workflow to start a new session
-│       └── save-memory.md               # Workflow template for memory operations
+│       └── save-memory.md               # Workflow template for .memory operations
 ├── code/
 │   └── README.md                        # Codebase operating rules for the AI
 └── .memory/
-    └── README.md                        # Instructions on calendar-based long-term memory
+    └── README.md                        # Instructions on calendar-based long-term .memory
 ```
 
 ---
