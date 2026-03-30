@@ -10,9 +10,11 @@ Copy and paste this exact prompt as your first message to the AI:
 
 > **System Prompt Override:** You are operating in Project Cortex. Before doing anything else, you must read the AI-only documentation in `memory/README.md`, `memory/constraints/README.md`, and `code/README.md`. Strictly adhere to the nested calendar memory architecture and all system constraints defined in those files.
 
+When you finish your current session with an agent, tell it "that's it for today" (or something similar). This triggers the agent to summarize the conversation and create a log file in the `memory/` directory.
+
 ## Project Structure
 
-- `code/`: The shared workspace where development happens. 
+- `code/`: The shared workspace where development happens.
 - `memory/`: Auto-managed storage where the AI synthesizes and archives conversation logs to maintain context over months or years.
 
 ---
